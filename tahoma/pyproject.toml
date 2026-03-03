@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tahoma"
+version = "0.1.0"
+description = "A simple wrapper for Playwright sessions."
+readme = "README.md"
+authors = [{ name = "Your Name" }]
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.49.0",
+    "pyyaml>=6.0",
+    "sqlalchemy>=2.0",
+    "psycopg2-binary>=2.9.9",
+    "haikunator>=2.1",
+    "shortuuid>=1.0",
+    "Pillow>=10.0.0",
+    "fsspec>=2024.2.0",
+    "adlfs>=2024.2.0",
+    "dotenv>=0.9.9",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/tahoma"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tahoma"]

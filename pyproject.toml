@@ -1,0 +1,22 @@
+[project]
+name = "cheetah-mar-3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "adlfs>=2026.2.0",
+    "asyncio>=4.0.0",
+    "browserenv",
+    "fsspec>=2026.2.0",
+    "jupyter>=1.1.1",
+    "pillow>=12.1.1",
+    "playwright>=1.58.0",
+    "psycopg2-binary>=2.9.11",
+    "sqlalchemy>=2.0.48",
+    "tahoma",
+]
+
+[tool.uv.sources]
+browserenv = { workspace = true, editable = true }
+tahoma = { workspace = true, editable = true }
